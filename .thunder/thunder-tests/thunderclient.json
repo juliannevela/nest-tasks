@@ -32,17 +32,84 @@
     "colId": "bbab6ec4-0bf1-48fb-9c78-fae714bca5bc",
     "containerId": "",
     "name": "createTask",
-    "url": "http://localhost:3000/tasks",
+    "url": "{{baseUrl}}/tasks",
     "method": "POST",
     "sortNum": 30000,
     "created": "2023-02-13T22:52:30.926Z",
-    "modified": "2023-02-13T22:54:14.514Z",
+    "modified": "2023-02-13T23:42:52.613Z",
     "headers": [],
     "params": [],
     "body": {
-      "type": "json",
-      "raw": "{\n  \"title\": \"Wash Laundry\",\n  \"description\": \"Gather and wash the dirty laundry\"\n}",
-      "form": []
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "title",
+          "value": "Dishes"
+        },
+        {
+          "name": "description",
+          "value": "Wash the dirty dishes"
+        },
+        {
+          "name": "title",
+          "value": "Laundry",
+          "isDisabled": true
+        },
+        {
+          "name": "description",
+          "value": "Wash the dirty laundry",
+          "isDisabled": true
+        },
+        {
+          "name": "title",
+          "value": "Zena",
+          "isDisabled": true
+        },
+        {
+          "name": "description",
+          "value": "Give Zena a bath",
+          "isDisabled": true
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "8b6a138b-ef4f-4784-b9bc-4e5b0f6b8bf6",
+    "colId": "bbab6ec4-0bf1-48fb-9c78-fae714bca5bc",
+    "containerId": "",
+    "name": "deleteTask",
+    "url": "{{baseUrl}}/tasks/5b2dc5b0-80c5-4665-a923-4f70b1354454",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2023-02-13T23:00:23.561Z",
+    "modified": "2023-02-13T23:06:11.474Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "dbd3bb8e-fd3c-419f-b502-9a006d764c35",
+    "colId": "bbab6ec4-0bf1-48fb-9c78-fae714bca5bc",
+    "containerId": "",
+    "name": "updateTaskStatus",
+    "url": "{{baseUrl}}/tasks/36c09101-a28d-42ea-a55c-266d2c13a114/status",
+    "method": "PATCH",
+    "sortNum": 50000,
+    "created": "2023-02-13T23:25:30.674Z",
+    "modified": "2023-02-13T23:43:04.477Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "status",
+          "value": "IN_PROGRESS"
+        }
+      ]
     },
     "tests": []
   }
