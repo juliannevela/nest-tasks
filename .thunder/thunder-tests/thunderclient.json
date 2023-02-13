@@ -1,0 +1,49 @@
+[
+  {
+    "_id": "2c4e4748-8990-42d4-b4a9-a4127d652cd6",
+    "colId": "bbab6ec4-0bf1-48fb-9c78-fae714bca5bc",
+    "containerId": "",
+    "name": "getAllTasks",
+    "url": "{{baseUrl}}/tasks",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-02-13T22:50:51.027Z",
+    "modified": "2023-02-13T22:52:23.164Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b7acde5b-a565-46af-b77b-359eadcd7e83",
+    "colId": "bbab6ec4-0bf1-48fb-9c78-fae714bca5bc",
+    "containerId": "",
+    "name": "getTaskById",
+    "url": "{{baseUrl}}/tasks/{{id}}",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-02-13T22:51:10.875Z",
+    "modified": "2023-02-13T22:51:38.620Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "c787460e-24bf-4612-9575-c9b7fb04eb66",
+    "colId": "bbab6ec4-0bf1-48fb-9c78-fae714bca5bc",
+    "containerId": "",
+    "name": "createTask",
+    "url": "http://localhost:3000/tasks",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-02-13T22:52:30.926Z",
+    "modified": "2023-02-13T22:54:14.514Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Wash Laundry\",\n  \"description\": \"Gather and wash the dirty laundry\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
